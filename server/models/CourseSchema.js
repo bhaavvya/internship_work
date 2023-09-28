@@ -6,17 +6,17 @@ const CourseSchema= new mongoose.Schema({
     name:{
         type:String,
         required:true,
-        unique:true,
-        minlength:2
+        unique : false
     },
     author:{
         type:String,
         required:true,
-        unique:true
+        unique:false
     },
     link : {
         type: String,
         required : true,
+        unique : false
     }
 
 })
